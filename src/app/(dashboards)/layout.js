@@ -1,7 +1,7 @@
 import DropDownButton from "../components/cards/dropDownButton";
 import Sidebar from "../components/sidebar/Sidebar";
-import { Button } from "@heroui/button";
 import GetAllOptions from "../../../services/optionData";
+import MenuLink from "../components/menuLink/menulink";
 
 export default async function Dashboard({ children }) {
   const option = await GetAllOptions();
@@ -42,9 +42,11 @@ export default async function Dashboard({ children }) {
 
           <div className="bg-white h-screen w-[87%] rounded-3xl p-10 mt-9 m-auto overflow-auto">
             <div className="flex justify-between">
-              <Button className="rounded-full bg-[#F5F7F8] text-[20px] text-[#087E8B] h-16 w-44">
+              {/* <Button className="rounded-full bg-[#F5F7F8] text-[20px] text-[#087E8B] h-16 w-44">
                 HomePage    
-              </Button>
+              </Button> */}
+              <MenuLink />
+
               {<DropDownButton dataApi={options} />}
             </div>
 
