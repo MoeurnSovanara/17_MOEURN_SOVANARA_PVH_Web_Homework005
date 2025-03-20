@@ -9,9 +9,6 @@ export default async function CartoonPage(){
             {cartoon.map((item) => (
                 <CartoonCategory items={item} key={item.id}/>
             ))}
-
- 
-
         </div>
     )
 }
