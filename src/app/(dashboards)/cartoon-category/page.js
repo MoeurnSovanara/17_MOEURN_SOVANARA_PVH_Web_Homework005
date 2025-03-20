@@ -1,7 +1,10 @@
 import CartoonCategory from "@/app/components/cards/CardCartoonCate"
 import CartoonFetchData from "../../../../services/cartoonData"
-export default async function CartoonPage(){
-    const categories = await CartoonFetchData();
+export default async function CartoonPage({searchParams}){
+    const { Id } = await searchParams;
+    const search= (await searchParams).search
+    const categories = await CartoonFetchData(search);
+    
     const cartoon = await categories.payload;
     console.log(cartoon)
     return (

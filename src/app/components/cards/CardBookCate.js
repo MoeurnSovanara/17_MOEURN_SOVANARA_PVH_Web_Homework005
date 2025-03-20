@@ -6,7 +6,7 @@ export default function CardCategory ({items}){
         <div className="col-span-6 h-[300px] bg-[#F5F7F8] rounded-large relative mt-52">
             <div className="grid grid-cols-12 h-full">
                 <div className="w-52 absolute left-10 top-[-150px] ">
-                    <Image src={`${items.image}`} width={176} height={221} className="rounded-[30px] border w-full"/>
+                    <Image src={`${items.image}`} alt="image" width={176} height={221} className="rounded-[30px] border w-full"/>
                 </div>
                 <div className="col-span-5 flex items-center justify-center mt-32">
                     <Link href={`/books/${items.id}`}>

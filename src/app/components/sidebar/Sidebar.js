@@ -20,11 +20,11 @@ export default function Sidebar() {
       {/* Component Start */}
       <div className="flex flex-col items-center w-full h-screen overflow-hidden text-gray-700 bg-white rounded">
         <div className="mt-7">
-          <Image src={Profile} className="place-self-center" />
-          <span className="ml-2 text-sm font-bold text-center flex justify-center py-2 text-[20px] text-[#0B3954]">
+          <Image src={Profile} alt="image" className="place-self-center" />
+          <span className="ml-2 font-bold text-center flex justify-center text-[25px] py-2 text-[#0B3954]">
             Moeurn Sovanara
           </span>
-          <p className="text-[#087E8B] py-1 text-[20px]">
+          <p className="text-[#087E8B] pl-4 text-[20px]">
             pozzliik1280@gmail.com
           </p>
         </div>
@@ -34,14 +34,14 @@ export default function Sidebar() {
               href="/home"
               className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-300"
             >
-              <Image src={HomeIcon} />
+              <Image src={HomeIcon} alt="image"/>
               <span className="ml-2 text-[20px] font-medium">Home</span>
             </Link>
             <Link
               href="/book-category"
               className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-300"
             >
-              <Image src={Book} />
+              <Image src={Book} alt="image"/>
               <p className="ml-2 text-[20px] font-medium">
                 Book Categories
               </p>
@@ -51,7 +51,7 @@ export default function Sidebar() {
               href="/cartoon-category"
               className="flex items-center w-full h-12 px-3 mt-2  hover:bg-gray-300"
             >
-              <Image src={school_cartoon} />
+              <Image src={school_cartoon} alt="image"/>
               <p className="ml-2 text-[20px] font-medium">
                 Old-School Cartoons
               </p>
@@ -61,7 +61,7 @@ export default function Sidebar() {
               href="#"
               className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-300"
             >
-              <Image src={video} />
+              <Image src={video} alt="image"/>
               <span className="ml-2 text-[20px] font-medium">
                 Movies & TV Shows
               </span>
@@ -71,7 +71,7 @@ export default function Sidebar() {
               href="#"
               className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-300"
             >
-              <Image src={music} />
+              <Image src={music} alt="image"/>
               <span className="ml-2 text-[20px] font-medium">Music</span>
             </Link>
 
@@ -79,14 +79,14 @@ export default function Sidebar() {
               href="#"
               className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-300"
             >
-              <Image src={camera} />
+              <Image src={camera} alt="image"/>
               <span className="ml-2 text-[20px] font-medium">Photography</span>
             </Link>
             <Link
               href="#"
               className="relative flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-300"
             >
-              <Image src={weight} />
+              <Image src={weight} alt="image"/>
               <span className="ml-2 text-[20px] font-medium">
                 Sports & Fitness
               </span>
@@ -96,7 +96,7 @@ export default function Sidebar() {
               href="#"
               className="relative flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-300"
             >
-              <Image src={code} />
+              <Image src={code} alt="image"/>
               <span className="ml-2 text-[20px] font-medium">
                 Technology & GadGets
               </span>
@@ -105,7 +105,7 @@ export default function Sidebar() {
               href="#"
               className="relative flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-300"
             >
-              <Image src={airplane} />
+              <Image src={airplane} alt="image"/>
               <span className="ml-2 text-[20px] font-medium">
                 Travel & Exploration
               </span>
@@ -114,7 +114,7 @@ export default function Sidebar() {
               href="#"
               className="relative flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-300"
             >
-              <Image src={edit} />
+              <Image src={edit} alt="image"/>
               <span className="ml-2 text-[20px] font-medium">
                 Writing & Journaling
               </span>
@@ -126,7 +126,7 @@ export default function Sidebar() {
           href="#"
           className="flex items-center pl-7 w-[80%] h-16 mt-auto bg-gray-200 rounded-[5%] m-10 hover:bg-gray-300"
         >
-          <Image src={setting} />
+          <Image src={setting} alt="image"/>
           <span className="ml-2 text-[20px] font-medium">Settings</span>
         </Link>
       </div>

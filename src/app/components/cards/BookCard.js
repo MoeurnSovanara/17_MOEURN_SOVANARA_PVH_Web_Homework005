@@ -8,7 +8,7 @@ export default function BookCard() {
   return (
     <Link href="/book-category" className="relative group block">
       {/* Floating Button */}
-      <div className="absolute z-10 left-5 top-5">
+      <div className="absolute z-10 left-8 top-7">
         <Button className="rounded-full text-[#087E8B] text-[20px] font-bold flex items-center gap-2 hover:bg-[#E0F7FA]">
           <Image src={tag} className="w-5" alt="Tag Icon" />
           Book

@@ -2,10 +2,12 @@ import BookFetchData from "../../../../services/booksData";
 import CardCategory from "@/app/components/cards/CardBookCate";
 import FilterBookByCateId from "../../../../services/filterBookByCateId";
 
+
 export default async function BookCategory({ searchParams }) {
   const { Id } = await searchParams;
+  const search= (await searchParams).search
 
-  const categories = await BookFetchData();
+  const categories = await BookFetchData(search);
   const filterBook = await FilterBookByCateId(Id);
   const books = await categories.payload;
   const data = Id ? filterBook : books;
